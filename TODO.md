@@ -1,0 +1,6 @@
+- [ ] Experimentos con diferentes tipos de modelo (NNET, DT, RF, SVM, etc.)
+- [X] Experimentos con diferentes tipos de feature selection.
+- [ ] Experimentos con diferentes ventanas de predicción.
+- [X] Probar otras métricas de evaluación.
+- [X] Describir de forma analítica la correlación entre la precisión y la explicación de las variables (DRIFT)
+- [X] Casos de uso 
