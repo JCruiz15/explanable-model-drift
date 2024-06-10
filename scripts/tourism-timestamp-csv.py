@@ -23,7 +23,7 @@ def tourism_excel_to_csv(
     df.ffill(inplace=True)
     
     # Year-month into timestamp
-    df['Fecha'] = pd.to_datetime(df['Año'].astype(str) + '-' + df['Mes'].astype(str) + '-01')
+    df['Fecha'] = pd.to_datetime(df['Año'].astype(int).astype(str) + '-' + df['Mes'].astype(int).astype(str) + '-01', format='%Y-%m-%d')
     df.drop(columns=['Año', 'Mes'], inplace=True)
     
     df.to_csv(output, index=False, sep=';', encoding='utf-8', date_format='%Y-%m', decimal='.')
